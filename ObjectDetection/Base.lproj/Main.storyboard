@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ybX-Fb-gPd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m53-GN-310">
+                                <rect key="frame" x="162" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="e01-iz-9f2"/>
+                                    <constraint firstAttribute="width" constant="50" id="eWi-lF-087"/>
+                                </constraints>
+                                <state key="normal" image="icon_record"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ep-Th-Uwl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ybX-Fb-gPd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BgH-gZ-bHK"/>
+                            <constraint firstItem="ybX-Fb-gPd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lp7-aR-iqL"/>
+                            <constraint firstItem="ybX-Fb-gPd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R2u-zH-1JU"/>
+                            <constraint firstItem="m53-GN-310" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SBA-Fn-wRA"/>
+                            <constraint firstItem="ybX-Fb-gPd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gHb-Uh-cKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m53-GN-310" secondAttribute="bottom" constant="20" id="nku-Ay-V8y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_record" destination="m53-GN-310" id="SRF-5B-zb4"/>
+                        <outlet property="image_view" destination="ybX-Fb-gPd" id="9XT-yt-aM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_record" width="261" height="261"/>
+    </resources>
+</document>
